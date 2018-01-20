@@ -8,6 +8,8 @@ default: &default
   adapter: mysql2
   username: root
   password: .
+  pool: 5
+  host: localhost
 
 development:
   <<: *default
