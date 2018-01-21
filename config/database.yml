@@ -9,7 +9,6 @@ default: &default
   username: root
   password: .
   pool: 5
-  host: localhost
 
 development:
   <<: *default
@@ -25,4 +24,3 @@ test:
 production:
   <<: *default
   database: db/production_mysql2
-  socket: /var/run/mysqld/mysqld.sock
