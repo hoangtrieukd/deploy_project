@@ -25,6 +25,4 @@ test:
 production:
   <<: *default
   database: db/production_mysql2
-  username: <%= ENV.fetch("root") %>
-  password: <%= ENV.fetch(".") %>
   socket: /var/lib/mysql/mysql.sock
